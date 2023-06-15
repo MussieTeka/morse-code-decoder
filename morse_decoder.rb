@@ -1,4 +1,4 @@
-MORSE_CODE_DICT = { 
+MORSE_CODE_DICT = {
   '.-' => 'A',
   '-...' => 'B',
   '-.-.' => 'C',
