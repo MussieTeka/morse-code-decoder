@@ -34,15 +34,15 @@ end
 puts decode_char('.--')
 
 def decode_word(morse_word)
-  morse_chars = morse_word.split(' ')
-  morse_chars.map { |char| decode_char(char) }.join('')
+  morse_chars = morse_word.split
+  morse_chars.map { |char| decode_char(char) }.join
 end
 
 puts decode_char('A')
 
 def decode_message(morse_message)
-  morse_words = morse_message.split('   ')
-  morse_words.map { |word| decode_word(word) }.join(' ')
+  morse_words = morse_message.split
+  morse_words.map { |word| decode_word(word) }.join
 end
 
 morse_message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
