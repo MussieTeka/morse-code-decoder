@@ -14,7 +14,7 @@ end
 
 def decode_word(morse_word)
   decoded_word = ''
-  morse_chars = morse_word.split(' ')
+  morse_chars = morse_word.split
 
   morse_chars.each do |morse_char|
     decoded_word += decode_char(morse_char)
@@ -29,7 +29,7 @@ def decode(message)
 
   morse_words.each do |morse_word|
     decoded_word = decode_word(morse_word)
-    decoded_message += decoded_word + ' ' unless decoded_word.empty?
+    decoded_message += "#{decoded_word} " unless decoded_word.empty?
   end
 
   decoded_message.rstrip
